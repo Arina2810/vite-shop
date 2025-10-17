@@ -6,100 +6,119 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vite-shop</title>
-<title>shop</title>
+  <title>Lusio</title>
 </head>
 
 <body class="bg-main-color text-text-color dark:bg-blue-950 dark:text-blue-50 h-full">
-  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto border">
+  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
 
 
     <header>
-      <h1 class="text-3xl text-blue-950 font-bold uppercase">Интернет-магазин мягких игрушек</h1>
+      <div class="logo">
+        <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="76" height="39" viewBox="0 0 76 30" fill="none">
+            <g clip-path="url(#clip0_683_1022)">
+              <path
+                d="M68.1843 30.0003C73.0343 30.0003 76.0006 25.5378 76.0006 18.4484C76.0006 11.2389 73.0343 6.89942 68.1843 6.89942C63.374 6.89942 60.3677 11.2389 60.3677 18.4484C60.3677 25.5378 63.374 30.0003 68.1843 30.0003ZM68.1843 29.0388C66.0195 29.0388 64.5766 25.8583 64.5766 18.4484C64.5766 10.9585 66.0195 7.86065 68.1843 7.86065C70.3888 7.86065 71.832 10.9585 71.832 18.4484C71.832 25.8583 70.3888 29.0388 68.1843 29.0388Z"
+                fill="#000"></path>
+              <path
+                d="M51.8698 10.2099V27.5621L51.8698 27.8964C51.8698 28.6476 51.603 29.2929 50.8677 29.2929V29.5191H51.8698H55.9584H56.9604V29.2929C56.2251 29.2929 55.9584 28.6477 55.9584 27.8964V27.5621V26.2266V10.6721V10.2099V7.37973H50.8677V7.60131C51.603 7.60131 51.8699 8.25118 51.8699 9.00253L51.8698 10.2099Z"
+                fill="#000"></path>
+              <path
+                d="M40.7257 30.0004C45.656 30.0004 47.7005 27.5972 47.7005 23.9924C47.7005 17.2234 38.6815 15.9114 38.6815 10.7846C38.6815 8.70189 40.365 7.86073 41.8483 7.86073C44.8504 7.86073 46.571 10.011 46.571 12.587H46.8186V7.94084C46.8186 7.94084 45.0952 6.89942 41.9685 6.89942C37.5191 6.89942 35.3946 9.90339 35.3946 12.3066C35.3946 18.8353 44.133 20.0672 44.133 25.5944C44.133 28.0378 42.4495 29.0389 40.7259 29.0389C37.5398 29.0389 36.0399 26.3148 36.0399 23.9121H35.8356V28.9989C35.8356 28.9989 37.7194 30.0004 40.7257 30.0004Z"
+                fill="#000"></path>
+              <path
+                d="M27.4179 9.63821V25.4337C27.4179 25.4337 26.5761 27.997 24.0908 27.997C21.4854 27.997 21.0043 25.7541 21.0043 22.4297V7.37973H15.9138V7.60131C16.649 7.60131 16.9159 8.25118 16.9159 9.00253V22.4298C16.9159 26.9159 17.6775 29.9999 22.4475 29.9999C26.0149 29.9999 27.1774 26.8757 27.418 26.1548V29.5191H32.4635V29.2788C31.7829 29.2788 31.5066 28.5192 31.5066 27.8807V10.6722V9.63829V7.37973H26.416V7.60131C27.1513 7.60131 27.4181 8.25118 27.4181 9.00253L27.4179 9.63821Z"
+                fill="#000"></path>
+              <path
+                d="M5.0908 28.4779V1.67403C5.0908 0.982003 5.65225 0.160266 6.09294 0.160266V0H0V0.160266C0.510462 0.160266 1.00215 0.997689 1.00215 1.67403V28.0374C1.00215 28.7226 0.578742 29.2749 0 29.359V29.5192H13.5486V23.2712H13.2804C13.2804 25.0138 11.8011 28.4989 9.86076 28.478L5.0908 28.4779Z"
+                fill="#000"></path>
+              <path
+                d="M53.8735 4.98748C55.0237 4.98748 55.9561 4.04393 55.9561 2.88C55.9561 1.71606 55.0237 0.772512 53.8735 0.772512C52.7232 0.772512 51.7908 1.71606 51.7908 2.88C51.7908 4.04393 52.7232 4.98748 53.8735 4.98748Z"
+                fill="#000"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_683_1022">
+                <rect width="76" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg></a>
+      </div>
     </header>
+    <nav>
+      <ul>
+        <li><a href="#">ЦЕНА</a></li>
+        <li><a href="#">МАТЕРИАЛ</a></li>
+        <li><a href="#">ЦВЕТ</a></li>
+        <li><a href="#">РАЗМЕР</a></li>
+        <li><a href="#">ПО ПОПУЛЯРНОСТИ</a></li>
+
+      </ul>
+    </nav>
+
     <main>
-      <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-        <div class="card border border-blue-900 rounded-lg p-4">
-          <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">
-          <a href="#" class="inline-block hover:text-blue-600 hover:scale-110 origin-center transition">
-            Мягкая игрушка
-          </a> 
+      <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3">
+        <div class="card rounded-lg p-4">
+          <img class="rounded-ld" src="public/img/product1-1.jpg" alt="игрушка">
+          <h3 class="text-black">
+            <a href="#" class="inline-block hover:text-blue-600 hover:scale-110 origin-center transition">
+              ПЛАТЬЕ ИЗ 100% КАШЕМИРА
+            </a>
           </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
-          <p class="text-[24px] text-[#000]">2200 &#8381;</p>
+
+          <p>38 990 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
-          <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+        <div class="card rounded-lg p-4">
+          <img class="rounded-ld" src="public/img/product2-1.jpg" alt="игрушка">
+          <h3 class="text-black">ПЛАТЬЕ МИДИ ИЗ ШЕРСТИ</h3>
+
+          <p>26 990 &#8381;</p>
+        </div>
+        <div class="card rounded-lg p-4">
+          <img class="rounded-ld" src="public/img/product3-1.jpg" alt="игрушка">
+          <h3 class="text-black">ПЛАТЬЕ МИДИ ИЗ МЕРИНОСА</h3>
+
+          <p>20 990 &#8381;</p>
+        </div>
+        <div class="card rounded-lg p-4">
+          <img class="rounded-ld" src="public/img/product4-1.jpg" alt="игрушка">
+          <h3 class="text-black">ПЛАТЬЕ МИНИ ПРИТАЛЛЕНОЕ</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
-          <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+        <div class="card rounded-lg p-4">
+          <img class="rounded-ld" src="public/img/product5-1.jpg" alt="игрушка">
+          <h3 class="text-black">ПЛАТЬЕ МАКСИ ИЗ ШЕРСТИ С КАШЕМИРОМ</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
+        <div class="card rounded-lg p-4">
           <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+          <h3 class="text-black">Мягкая игрушка</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
+        <div class="card rounded-lg p-4">
           <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+          <h3 class="text-black">Мягкая игрушка</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
+        <div class="card rounded-lg p-4">
           <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+          <h3 class="text-black">Мягкая игрушка</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
+        <div class="card rounded-lg p-4">
           <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+          <h3 class="text-black">Мягкая игрушка</h3>
+
           <p>2200 &#8381;</p>
         </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
+        <div class="card rounded-lg p-4">
           <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
-          <p>2200 &#8381;</p>
-        </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
-          <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
-          <p>2200 &#8381;</p>
-        </div>
-        <div class="card border border-blue-900 rounded-lg p-4">
-          <img class="rounded-ld" src="public/img/toy1.jpeg" alt="игрушка">
-          <h3 class="font-bold text-blue-950">Мягкая игрушка</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident quas illum id, temporibus dolor
-            facilis amet, enim sapiente, corrupti aliquam maxime! Itaque maxime quo et exercitationem autem distinctio
-            mollitia.</p>
+          <h3 class="text-black">Мягкая игрушка</h3>
+
           <p>2200 &#8381;</p>
         </div>
       </div>

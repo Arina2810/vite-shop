@@ -1,8 +1,43 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-@theme{
+
+@theme {
   --color-main-color: light blue;
-  --color-text-color:black;
-  --text-28:1.75rem;
+  --color-text-color: black;
+  --text-28: 1.75rem;
   --gap-my: 60px;
+}
+
+/*-------каталог----*/
+.catalog__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__card {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.price__card {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.text-black {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family:FavoritPro,sans-serif ; 
+}
+.salavat_irnby{
+  width: 103px;
+  height: 15px;
 }

@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vite-shop</title>
   <title>Lusio</title>
@@ -13,7 +18,7 @@
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
 
 
-    <header>
+    <header class="header">
       <div class="logo">
         <svg width="176" height="33" viewBox="0 0 176 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_413_199)">
@@ -43,10 +48,10 @@
     <div class="buttons-container">
       <button>
         <i class="bi bi-sliders2"></i>
+        <p>Наши рекомендации</p>
         <h2>
           ФИЛЬТРЫ (1)
         </h2>
-        <p>Наши рекомендации</p>
       </button>
     </div>
     <nav>
@@ -62,90 +67,132 @@
       <div class="bg-gray-300 w-80">
         ФильтрыФильтрыФильтрыФильтры
       </div>
-      <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3">
-        <div class="catalog__card">
+      <div
+        class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 grid-rows-[auto] items-stretch gap-4 px-2">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/1.jpg" alt="игрушка">
-          <img class="salavat_irnby" src="public/img/salavat.svg" alt="коллаборация">
-          <h3 class="text-black">
-            <a href="#" class="inline-block hover:text-blue-600 hover:scale-110 origin-center transition">
-              Рашгард с капюшоном
-            </a>
-          </h3>
-          <p class="price__card">10 990 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+          <div class="grow">
+            <img class="salavat_irnby" src="public/img/salavat.svg" alt="коллаборация">
+            <h3 class="text-black">
+              <a href="irby.html"> Рашгард с капюшоном
+              </a>
+            </h3>
+            <p class="price__card">10 990 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/2.jpg" alt="игрушка">
-          <img class="salavat_irnby" src="public/img/salavat.svg" alt="коллаборация">
-          <h3 class="text-black">Комбинезон half-zip</h3>
+          <div class="grow">
+            <img class="salavat_irnby" src="public/img/salavat.svg" alt="коллаборация">
+            <h3 class="text-black">Комбинезон half-zip</h3>
 
-          <p class="price__card">14 990 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+            <p class="price__card">14 990 &#8381;</p>
+          </div>
+
+
+          <div class="buy__card">
+            <button
+              class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/3.jpg" alt="игрушка">
-          <h3 class="text-black">Рашгард</h3>
-
-          <p class="price__card">8 990  &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase ">В
-            корзину</button>
+          <div class="grow">
+            <h3 class="text-black">Рашгард</h3>
+            <p class="price__card">8 990 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/4.jpg" alt="игрушка">
-          <h3 class="text-black">Брюки клеш</h3>
+          <div class="grow">
 
-          <p class="price__card">8 990  &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase ">В
-            корзину</button>
+            <h3 class="text-black">Брюки клеш</h3>
+            <p class="price__card">8 990 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button
+              class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase ">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch">
           <img class="catalog__img" src="public/img/5.jpg" alt="игрушка">
-          <h3 class="text-black">Топ корсетный</h3>
-
-          <p class="price__card">5 690 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+          <div class="grow">
+            <h3 class="text-black">Топ корсетный</h3>
+            <p class="price__card">5 690 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/6.jpg" alt="игрушка">
-          <h3 class="text-black">Брюки клеш</h3>
+          <div class="grow">
 
-          <p class="price__card">8 990 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+            <h3 class="text-black">Брюки клеш</h3>
+            <p class="price__card">8 990 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/7.jpg" alt="игрушка">
-          <h3 class="text-black">Топ корсетный</h3>
-
-          <p class="price__card">5 690 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+          <div class="grow">
+            <h3 class="text-black">Топ корсетный</h3>
+            <p class="price__card">5 690 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button
+              class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/8.jpg" alt="игрушка">
-          <h3 class="text-black">Легинсы со вставками из сетки</h3>
+          <div class="grow">
 
-          <p class="price__card">8 990 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+            <h3 class="text-black">Легинсы со вставками из сетки</h3>
+            <p class="price__card">8 990 &#8381;</p>
+          </div>
+          <div class="buy__card">
+            <button
+              class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+              корзину</button>
+          </div>
         </div>
-        <div class="catalog__card">
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="public/img/9.jpg" alt="игрушка">
-          <h3 class="text-black">Топ халтер</h3>
+          <div class="grow">
 
-          <p class="price__card">4 990 &#8381;</p>
-          <button class="bg-[#fff] border-2 p-4 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
-            корзину</button>
+            <h3 class="text-black">Топ халтер</h3>
+            <p class="price__card">4 990 &#8381;</p>
+          </div>
+          <div class="catalog__card">
+            <div class="buy__card">
+              <button
+                class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+                корзину</button>
+            </div>
+          </div>
         </div>
-      </div>
 
-      </main>
-      <footer>
-        <p>&copy; Буйван Арина, 2025 г.</p>
-      </footer>
+
+    </main>
+    <footer>
+      <p>&copy; Буйван Арина, 2025 г.</p>
+    </footer>
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>

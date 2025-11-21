@@ -1,5 +1,7 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
+@import "flowbite/dist/flowbite.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -12,6 +14,39 @@
 html {
   font-family: "Golos Text", sans-serif;
 }
+
+.buttons__all {
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+
+}
+
+.menu__Butt {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+font-size: 13px;
+
+}
+.our__recomendations{
+
+}
+
 
 /*-------каталог----*/
 .catalog__card {
@@ -56,12 +91,7 @@ html {
 
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
 
-}
 
 .new {
   font-size: 12px;

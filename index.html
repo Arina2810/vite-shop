@@ -22,6 +22,7 @@
       <div class="buttons__all">
         <div>
           <ul class="menu__Butt">
+            <i class="bi bi-list"></i>
             <li><a href="#">NEW</a></li>
             <li><a href="#">SPORT</a></li>
             <li><a href="#">КАТАЛОГ</a></li>
@@ -77,29 +78,52 @@
       </div>
     </header>
     <div class="buttons-container">
-      <button>
+
+      <p>
+        СБРОСИТЬ ВСЕ
+      </p>
+    </div>
+
+    <main class="flex">
+      <div class="filter">
         <i class="sliders2"></i>
         <p>НАШИ РЕКОМЕНДАЦИИ</p>
-        <h2>
-          ФИЛЬТРЫ (1)
-        </h2>
-        <p>
-          СБРОСИТЬ ВСЕ
-        </p>
-      </button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">РАЗДЕЛ</a></li>
-        <li><a href="#">ТИП ТОВАРА</a></li>
-        <li><a href="#">РАЗМЕР</a></li>
-        <li><a href="#">ЦВЕТА</a></li>
-        <li><a href="#">ЦЕНА</a></li>
-      </ul>
-    </nav>
-    <main class="flex">
-      <div class="bg-gray-300 w-80">
-        ФильтрыФильтрыФильтрыФильтры
+        <button class="menu__button">
+          <div class="icon_settings">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12"  height="12" fill="currentColor" class="bi  bi-sliders filter-svg"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+          </svg>
+          </div>
+          <h2>ФИЛЬТРЫ(1)</h2>
+        </button>
+        <form id="form-filter" action="">
+          <div class="form__item">
+            <div>
+              <label for="Поиск"></label>
+            </div>
+            <div>
+              <input id="search" name="" type="text" placeholder="Поиск" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <h3>Цвет</h3>
+            <div class="filter-color">
+              <div>
+                <input class="color-radio" type="radio" name="color" id="color-red">
+                <label class="color-label" for="color-red;" tabindex="0"></label>
+              </div>
+              <div>
+                <input class="color-radio" type="radio" name="color" id="color-blue">
+                <label class="color-label" for="color-blue;" tabindex="0"></label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <input class="form__btn" type="submit" value="Поиск">
+          </div>
+        </form>
       </div>
       <div
         class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 grid-rows-[auto] items-stretch gap-4 px-2">
@@ -221,8 +245,51 @@
             </div>
           </div>
         </div>
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
+          <img class="catalog__img" src="public/img/1--.jpg" alt="игрушка">
+          <div class="grow">
 
+            <h3 class="text-black">Топ на тонких бретелях</h3>
+            <p class="price__card">4 790 &#8381;</p>
+          </div>
+          <div class="catalog__card">
+            <div class="buy__card">
+              <button
+                class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+                корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
+          <img class="catalog__img" src="public/img/10.jpg" alt="игрушка">
+          <div class="grow">
 
+            <h3 class="text-black">Брюки Ex-boyfriend</h3>
+            <p class="price__card">7 990 &#8381;</p>
+          </div>
+          <div class="catalog__card">
+            <div class="buy__card">
+              <button
+                class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+                корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__card flex flex-col items-stretch self-stretch">
+          <img class="catalog__img" src="public/img/11.jpg" alt="игрушка">
+          <div class="grow">
+
+            <h3 class="text-black">Велосипедки Ex-boyfriend</h3>
+            <p class="price__card">6 590 &#8381;</p>
+          </div>
+          <div class="catalog__card">
+            <div class="buy__card">
+              <button
+                class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+                корзину</button>
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
       <p>&copy; Буйван Арина, 2025 г.</p>

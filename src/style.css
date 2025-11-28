@@ -14,12 +14,14 @@
 html {
   font-family: "Golos Text", sans-serif;
 }
-
 .buttons__all {
   padding-top: 20px;
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.menu__button{
+  display: flex;
 }
 
 .logo {
@@ -40,12 +42,10 @@ html {
   display: flex;
   width: 100%;
   gap: 20px;
-font-size: 13px;
-
+  font-size: 13px;
 }
-.our__recomendations{
 
-}
+.our__recomendations {}
 
 
 /*-------каталог----*/
@@ -101,4 +101,69 @@ font-size: 13px;
 
 .buy__card {
   font-size: 12px;
+}
+
+/*---forms------*/
+.form__item input {
+  border: darkorchid 1px solid;
+  background-color: rgb(220, 220, 255);
+  color: black;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.form__item input:focus {
+  outline: none;
+  outline-offset: 5px;
+
+}
+
+.form__item input:disabled:hover,
+.form__item input:disabled:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*.form__item input[type=submit]{
+background-color: rgb(0, 0, 0);
+color: white;*/
+
+.form__item input[type=text]:valid {
+  border-color: rgb(50, 132, 255);
+  background-color: rgb(255, 203, 246);
+}
+
+.form__item input[type=text]:invalid {
+  border-color: #ffe5e8;
+  background-color: #ffe5e8;
+}
+
+.form__item input[type=text]:invalid::after {
+  appearance: auto;
+  accent-color: purple;
+  width: 20px;
+}
+
+.color-radio {
+  display: none;
+}
+
+.color-label {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: black 1px solid;
+  border-radius: 2px;
+  transition: 0.3;
+}
+
+.color-radio:checked+.color-label{
+  outline: gray 2px solid;
+  outline-offset: 3px;
+}
+
+.filter-color {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

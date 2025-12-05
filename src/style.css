@@ -144,7 +144,7 @@ color: white;*/
   width: 20px;
 }
 
-.color-radio {
+.color-checkbox {
   display: none;
 }
 
@@ -157,7 +157,7 @@ color: white;*/
   transition: 0.3;
 }
 
-.color-radio:checked+.color-label{
+.color-checkbox:checked+.color-label{
   outline: gray 2px solid;
   outline-offset: 3px;
 }

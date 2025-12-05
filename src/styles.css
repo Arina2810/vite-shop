@@ -1,0 +1,51 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "tailwindcss";
+@import "flowbite/dist/flowbite.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-main-color: light blue;
+    --color-text-color: black;
+    --text-28: 1.75rem;
+    --gap-my: 60px;
+}
+
+html {
+    font-family: "Golos Text", sans-serif;
+}
+
+.buttons__all {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu__button {
+    display: flex;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon__container {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+
+}
+
+.menu__Butt {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 13px;
+}
+.text-sm{
+    text-transform: uppercase;
+}

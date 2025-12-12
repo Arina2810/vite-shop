@@ -40,12 +40,56 @@ html {
 
 }
 
+details {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+summary {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon {
+    transform: rotate(90deg);
+}
+
 .menu__Butt {
     display: flex;
     width: 100%;
     gap: 20px;
     font-size: 13px;
 }
-.text-sm{
-    text-transform: uppercase;
+
+.underline-anim {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.underline-anim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 1px;
+    background: #666;
+    transition: width 0.3s ease;
+}
+
+.underline-anim:hover::after {
+    width: 100%;
 }

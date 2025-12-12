@@ -22,6 +22,9 @@
         <title>IRNBY</title>
     </head>
     <header class="header">
+        <div class="anim__stroke">
+            NEW DROP: EX-BOYFRIEND
+        </div>
         <div class="buttons__all">
             <div>
                 <ul class="menu__Butt">
@@ -83,9 +86,14 @@
     </header>
     <main class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-        <div class="flex">
-            <img src="public/img/1.1.jpg" class="rounded-lg shadow">
-            <img src="public/img/1.2.jpg" class="rounded-lg shadow">
+        <div class="slider">
+            <div class="slides">
+                <img src="/img/1.1.jpg" class="slide active">
+                <img src="/img/1.2.jpg" class="slide">
+            </div>
+
+            <button class="prev">‹</button>
+            <button class="next">›</button>
         </div>
 
         <div>
@@ -95,7 +103,7 @@
 
             <div class="flex gap-4 mb-1">
                 <div class="mb-1">
-                    <select class="border h-12 w-48 px-3 rounded-none">
+                    <select class="border h-12 w-48 px-3 rounded-none ">
                         <option>Черный</option>
                     </select>
                 </div>
@@ -111,69 +119,105 @@
                 </div>
             </div>
             <div class="flex gap-4 mb-4">
-                <button class="border h-12 w-48 px-3 rounded-none">
+                <button class="border h-12 w-48 px-3 rounded-none whitespace-nowrap text-sm">
                     НАПИСАТЬ МЕНЕДЖЕРУ
                 </button>
 
-                <button class="bg-black text-white h-12 w-48 px-3 rounded-none">
+                <button class="bg-black text-white h-12 w-48 px-3 rounded-none whitespace-nowrap text-sm">
                     ДОБАВИТЬ В КОРЗИНУ
                 </button>
             </div>
 
             <div class="flex gap-6 text-sm text-gray-600 mb-10">
-                <button>Добавить в избранное</button>
-                <button>Намекнуть о подарке</button>
+                <button class="underline-anim">Добавить в избранное</button>
+                <button class="underline-anim">Намекнуть о подарке</button>
             </div>
-
-            <div class="divide-y border-y">
-
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">ОПИСАНИЕ</summary>
-                    <p class="text-sm mt-2">ID товара: LS034
-                        Облегающий силуэт
-                        Фасон кроп
-                        Удлиненные рукава с отверстиями под большой палец
-                        Узкий капюшон с кулиской
-                        Застежка на молнию с силиконовым пуллером
-                        Рельефные швы с корректирующим эффектом
-                        Два кармана на молнии
-                        Суперэластичная ткань
-                        Плотное прилегание
-                        Лого на спинке</p>
-                </details>
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">СОСТАВ</summary>
-                    <p class="text-sm mt-2">75% Нейлон; 25% Спандекс</p>
-                </details>
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">УХОД</summary>
-                    <p class="text-sm mt-2">
-                        Стирка до 30°C
-                        Отбеливать запрещено
-                        Отжим и сушка в машине запрещены
-                        Утюжка запрещена
-                        Химчистка запрещена</p>
-                </details>
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">ТАБЛИЦА РАЗМЕРОВ</summary>
-                    <button class="tabl__size"></button>
-                </details>
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">РАЗМЕР НА МОДЕЛИ</summary>
-                    <p class="text-sm mt-2">Обхват груди: 84 см
-                        Обхват талии: 59 см
-                        Обхват бёдер: 88 см
-                        Рост: 175 см
-                        Размер: 42(XS)</p>
-                </details>
-                <details class="py-4 cursor-pointer">
-                    <summary class="font-medium">ДОСТАВКА</summary>
-                    <p class="text-sm mt-2">Мы доставляем заказы по всему миру. Заказы по России отправляем курьерскими
-                        службами доставки: СДЭК Boxberry и Яндекс. Вы можете выбрать доставку курьером или самовывоз из
-                        отделения/постамата. Заказы в другие страны отправляем курьерскими службами: СДЭК и DHL.
-                        Бесплатная доставка заказов от 15000 рублей</p>
-                </details>
-            </div>
+            <details class="py-4 cursor-pointer border-b">
+                <summary class="font-light flex justify-between items-center">
+                    ОПИСАНИЕ
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <div class="mt-2 text-sm">
+                    ID товара: LS034
+                    Облегающий силуэт
+                    Фасон кроп
+                    Удлиненные рукава с отверстиями под большой палец
+                    Узкий капюшон с кулиской
+                    Застежка на молнию с силиконовым пуллером
+                    Рельефные швы с корректирующим эффектом
+                    Два кармана на молнии
+                    Суперэластичная ткань
+                    Плотное прилегание
+                    Лого на спинке
+                </div>
+            </details>
+            <details class="py-4 cursor-pointer">
+                <summary class="font-medium">СОСТАВ
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <p class="text-sm mt-2">75% Нейлон; 25% Спандекс</p>
+            </details>
+            <details class="py-4 cursor-pointer">
+                <summary class="font-medium">УХОД
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <p class="text-sm mt-2">
+                    Стирка до 30°C
+                    Отбеливать запрещено
+                    Отжим и сушка в машине запрещены
+                    Утюжка запрещена
+                    Химчистка запрещена</p>
+            </details>
+            <details class="py-4 cursor-pointer">
+                <summary class="font-medium">ТАБЛИЦА РАЗМЕРОВ
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <button class="tabl__size"></button>
+            </details>
+            <details class="py-4 cursor-pointer">
+                <summary class="font-medium">РАЗМЕР НА МОДЕЛИ
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <p class="text-sm mt-2">Обхват груди: 84 см
+                    Обхват талии: 59 см
+                    Обхват бёдер: 88 см
+                    Рост: 175 см
+                    Размер: 42(XS)</p>
+            </details>
+            <details class="py-4 cursor-pointer">
+                <summary class="font-medium">ДОСТАВКА
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </summary>
+                <p class="text-sm mt-2">Мы доставляем заказы по всему миру. Заказы по России отправляем курьерскими
+                    службами доставки: СДЭК Boxberry и Яндекс. Вы можете выбрать доставку курьером или самовывоз из
+                    отделения/постамата. Заказы в другие страны отправляем курьерскими службами: СДЭК и DHL.
+                    Бесплатная доставка заказов от 15000 рублей</p>
+            </details>
+        </div>
         </div>
     </main>
 

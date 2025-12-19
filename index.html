@@ -79,16 +79,87 @@
     </header>
     <main class="flex">
       <div class="filters">
-        <div class="header">
+      <aside class="filters">
 
-        </div>
+  <div class="filters-header">
+    <span>ФИЛЬТРЫ (1)</span>
+    <button class="reset">СБРОСИТЬ ВСЕ</button>
+  </div>
+
+  <div class="filter-group">
+    <h4>РАЗДЕЛ</h4>
+    <label><input type="checkbox"> WOMEN</label>
+    <label><input type="checkbox"> MEN</label>
+  </div>
+
+  <div class="filter-group">
+    <h4>ТИП ТОВАРА</h4>
+
+    <label><input type="checkbox"> NEW</label>
+    <label><input type="checkbox"> Топы спортивные</label>
+    <label><input type="checkbox"> NEW</label>
+    <label><input type="checkbox"> Легинсы</label>
+    <label><input type="checkbox"> Рашгарды</label>
+    <label><input type="checkbox"> SPORT</label>
+    <label><input type="checkbox"> SPORT</label>
+    <label><input type="checkbox"> Шорты</label>
+    <label><input type="checkbox"> CASUAL</label>
+    <label><input type="checkbox"> Брюки спортивные</label>
+    <label><input type="checkbox"> Футболки</label>
+    <label><input type="checkbox"> UNDERWEAR</label>
+    <label><input type="checkbox"> Лонгсливы</label>
+    <label><input type="checkbox"> Лонгсливы спортивные</label>
+    <label><input type="checkbox"> Нижнее белье</label>
+    <label><input type="checkbox"> ACCESSORIES</label>
+    <label><input type="checkbox"> Футболки</label>
+    <label><input type="checkbox"> Шорты спортивные</label>
+    <label><input type="checkbox"> Брюки</label>
+    <label><input type="checkbox"> Ветровки</label>
+    <label><input type="checkbox"> Лонгсливы</label>
+    <label><input type="checkbox"> Комбинезоны спортивные</label>
+    <label><input type="checkbox"> CASUAL</label>
+  </div>
+
+
+  <div class="filter-group">
+    <h4>РАЗМЕР</h4>
+    <label><input type="checkbox"> 40</label>
+    <label><input type="checkbox"> 42</label>
+    <label><input type="checkbox"> 44</label>
+    <label><input type="checkbox"> 46</label>
+    <label><input type="checkbox"> 48</label>
+    <label><input type="checkbox"> 42/regular</label>
+    <label><input type="checkbox"> 42/tall</label>
+    <label><input type="checkbox"> 46/tall</label>
+    <label><input type="checkbox"> 48/tall</label>
+  </div>
+
+
+  <div class="filter-group">
+    <h4>ЦВЕТ</h4>
+    <label><input type="checkbox"> Черный</label>
+    <label><input type="checkbox"> Белый</label>
+    <label><input type="checkbox"> Серый</label>
+    <label><input type="checkbox"> Светло-розовый</label>
+  </div>
+
+
+  <div class="filter-group">
+    <h4>ЦЕНА</h4>
+    <div class="price">
+      <input type="number" placeholder="От 250 ₽">
+      <input type="number" placeholder="До 250 000 ₽">
+    </div>
+  </div>
+
+</aside>
+
 
 
 
       </div>
 
-      <div
-        class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 grid-rows-[auto] items-stretch gap-4 px-2">
+      <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 grid-rows-[auto] items-stretch gap-4 px-2">
         <div class="catalog__card flex flex-col items-stretch self-stretch">
           <img class="catalog__img" src="/img/1.jpg" alt="игрушка">
           <div class="grow">
@@ -252,47 +323,42 @@
             </div>
           </div>
         </div>
+        <div></div>
     </main>
     <footer class="text-gray-800 dark:bg-blue-950 dark:text-blue-50 py-12 ">
       <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-        <!-- Колонка 1 -->
         <div class="flex flex-col gap-2 text-sm">
           <h4 class="uppercase font-normal font-semibold mb-2">Контакты *</h4>
           <p class="hover:font-semibold transition-all duration-100">8 (800) 777-01-22</p>
-          <p class="hover:font-semibold transition-all duration-100 underline"p>info@irnby.com</p>
+          <p class="hover:font-semibold transition-all duration-100 underline" p>info@irnby.com</p>
           <p class="hover:font-semibold transition-all duration-100">Магазины</p>
           <p class="hover:font-semibold transition-all duration-100">WhatsApp</p>
           <p class="hover:font-semibold transition-all duration-100">Telegram</p>
           <p class="hover:font-semibold transition-all duration-100">VK</p>
           <p>* Часы работы клиентского сервиса 10:00-21:00</p>
         </div>
-
-        <!-- Колонка 2 -->
         <div class="flex flex-col gap-2 text-sm">
           <h4 class="uppercase font-normal font-semibold mb-2">О бренде</h4>
           <p class="hover:font-semibold transition-all duration-100">IRNBY</p>
           <p class="hover:font-semibold transition-all duration-100">Сотрудничество</p>
         </div>
-
-        <!-- Колонка 3 -->
         <div class="flex flex-col gap-2 text-sm">
           <h4 class="uppercase font-normal  font-semibold mb-2">Покупателям</h4>
           <p class="hover:font-semibold transition-all duration-100">Доставка</p>
           <p class="hover:font-semibold transition-all duration-100">Оплата</p>
           <p class="hover:font-semibold transition-all duration-100">Возвраты</p>
           <p class="hover:font-semibold transition-all duration-100">Art</p>
-          <p class="hover:font-semibold transition-all duration-100">Правила приобретения и применения подарочных карт</p>
+          <p class="hover:font-semibold transition-all duration-100">Правила приобретения и применения подарочных карт
+          </p>
           <p class="hover:font-semibold transition-all duration-100">Программа лояльности</p>
           <p class="hover:font-semibold transition-all duration-100">Часто задаваемые вопросы</p>
           <p class="hover:font-semibold transition-all duration-100">Уход за изделиями</p>
         </div>
-
-        <!-- Колонка 4 -->
         <div class="flex flex-col gap-2 text-sm">
           <h4 class="uppercase font-normal font-semibold mb-2">Подписка</h4>
           <p class="underline text-gray-400">Скидка 1000 за подписку на нашу рассылку</p>
-         <p class="mt-40">ООО «АЙРОНБАЙ»</p>
+          <p class="mt-40">ООО «АЙРОНБАЙ»</p>
           <p>ИНН 7810941545</p>
         </div>
 

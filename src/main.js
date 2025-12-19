@@ -7,14 +7,31 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+ let swiper1 = new Swiper(".mySwiper1", {
+    modules: [Navigation, Pagination],
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    const toggleBtn = document.getElementById('filterToggle');
+const closeBtn = document.getElementById('filterClose');
+const panel = document.getElementById('filterPanel');
+const overlay = document.getElementById('filterOverlay');
+
+toggleBtn.addEventListener('click', () => {
+  panel.classList.add('active');
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
 });
-function resetFilters() {
-  document.querySelectorAll('.filters input[type="checkbox"]').forEach(cb => cb.checked = false);
+
+function closeFilters() {
+  panel.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
 }
+
+closeBtn.addEventListener('click', closeFilters);
+overlay.addEventListener('click', closeFilters);

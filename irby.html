@@ -22,9 +22,6 @@
         <title>IRNBY</title>
     </head>
     <header class="header">
-        <div class="anim__stroke">
-            NEW DROP: EX-BOYFRIEND
-        </div>
         <div class="buttons__all">
             <div>
                 <ul class="menu__Butt">
@@ -85,15 +82,12 @@
         </div>
     </header>
     <main class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="public/img/image 1.png" alt="" class="w-full h-full object-cover"></div>
 
-        <div class="slider">
-            <div class="slides">
-                <img src="/img/1.1.jpg" class="slide active">
-                <img src="/img/1.2.jpg" class="slide">
             </div>
-
-            <button class="prev">‹</button>
-            <button class="next">›</button>
+            <div class="swiper-pagination"></div>
         </div>
 
         <div>
@@ -217,39 +211,115 @@
                     отделения/постамата. Заказы в другие страны отправляем курьерскими службами: СДЭК и DHL.
                     Бесплатная доставка заказов от 15000 рублей</p>
             </details>
+            <details class="py-4 cursor-pointer text-gray-400">
+                <p>Вернуться в каталог</p>
+            </details>
         </div>
         </div>
     </main>
 
     <section class="max-w-7xl mx-auto px-6 py-16">
         <h2 class="text-xl font-base mb-8">РЕКОМЕНДОВАННЫЕ ТОВАРЫ</h2>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-                <img src="public/img/2.1.jpg" class="rounded-lg mb-3" />
-                <p class="text-sm">Комбинезон half-zip</p>
-                <p class="font-medium">14 990 ₽</p>
+        <div
+            class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 grid-rows-[auto] items-stretch gap-4 px-2">
+            <div class="catalog__card flex flex-col items-stretch self-stretch">
+                <img class="catalog__img" src="/img/2.1.jpg" alt="игрушка">
+                <div class="grow">
+                    <h3 class="text-black">Брюки из экокожи</h3>
+                    <p class="price__card">14 990 &#8381;</p>
+                </div>
+                <div class="buy__card">
+                    <button
+                        class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+                        корзину</button>
+                </div>
             </div>
+            <div class="catalog__card flex flex-col items-stretch self-stretch">
+                <img class="catalog__img" src="/img/6.jpg" alt="игрушка">
+                <div class="grow">
+                    <img class="salavat_irnby" src="/img/salavat.svg" alt="коллаборация">
+                    <h3 class="text-black">Комбинезон half-zip</h3>
 
-            <div>
-                <img src="public/img/2.2.jpg" class="rounded-lg mb-3" />
-                <p class="text-sm">Брюки из экокожи</p>
-                <p class="font-medium">14 990 ₽</p>
+                    <p class="price__card">14 990 &#8381;</p>
+                </div>
+
+
+                <div class="buy__card">
+                    <button
+                        class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase">В
+                        корзину</button>
+                </div>
             </div>
-
-            <div>
-                <img src="public/img/2.3.jpg" class="rounded-lg mb-3" />
-                <p class="text-sm">Шапка-шлем из эко-кожи</p>
-                <p class="font-medium">7 990 ₽</p>
+            <div class="catalog__card flex flex-col items-stretch self-stretch">
+                <img class="catalog__img" src="/img/2.3.jpg" alt="игрушка">
+                <div class="grow">
+                    <h3 class="text-black">Шапка-шлем из эко-кожи</h3>
+                    <p class="price__card">7 990 &#8381;</p>
+                </div>
+                <div class="buy__card">
+                    <button
+                        class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8] transition focus:bg-[#f8f8f8] uppercase">В
+                        корзину</button>
+                </div>
             </div>
+            <div class="catalog__card flex flex-col items-stretch self-stretch">
+                <img class="catalog__img" src="/img/2.4.jpg" alt="игрушка">
+                <div class="grow">
 
-            <div>
-                <img src="public/img/2.4.jpg" class="rounded-lg mb-3" />
-                <p class="text-sm">Брюки из эко-кожи</p>
-                <p class="font-medium">14 990 ₽</p>
+                    <h3 class="text-black">Брюки из эко-кожи</h3>
+                    <p class="price__card">14 990 &#8381;</p>
+                </div>
+                <div class="buy__card">
+                    <button
+                        class="bg-[#fff] border-1 p-2.5 w-full hover:bg-[#f8f8f8]   transition focus:bg-[#f8f8f8] uppercase ">В
+                        корзину</button>
+                </div>
             </div>
         </div>
+
     </section>
+    <footer class="text-gray-800 dark:bg-blue-950 dark:text-blue-50 py-12 ">
+        <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="uppercase font-normal font-semibold mb-2">Контакты *</h4>
+                <p class="hover:font-semibold transition-all duration-100">8 (800) 777-01-22</p>
+                <p class="hover:font-semibold transition-all duration-100 underline" p>info@irnby.com</p>
+                <p class="hover:font-semibold transition-all duration-100">Магазины</p>
+                <p class="hover:font-semibold transition-all duration-100">WhatsApp</p>
+                <p class="hover:font-semibold transition-all duration-100">Telegram</p>
+                <p class="hover:font-semibold transition-all duration-100">VK</p>
+                <p>* Часы работы клиентского сервиса 10:00-21:00</p>
+            </div>
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="uppercase font-normal font-semibold mb-2">О бренде</h4>
+                <p class="hover:font-semibold transition-all duration-100">IRNBY</p>
+                <p class="hover:font-semibold transition-all duration-100">Сотрудничество</p>
+            </div>
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="uppercase font-normal  font-semibold mb-2">Покупателям</h4>
+                <p class="hover:font-semibold transition-all duration-100">Доставка</p>
+                <p class="hover:font-semibold transition-all duration-100">Оплата</p>
+                <p class="hover:font-semibold transition-all duration-100">Возвраты</p>
+                <p class="hover:font-semibold transition-all duration-100">Art</p>
+                <p class="hover:font-semibold transition-all duration-100">Правила приобретения и применения
+                    подарочных карт
+                </p>
+                <p class="hover:font-semibold transition-all duration-100">Программа лояльности</p>
+                <p class="hover:font-semibold transition-all duration-100">Часто задаваемые вопросы</p>
+                <p class="hover:font-semibold transition-all duration-100">Уход за изделиями</p>
+            </div>
+            <div class="flex flex-col gap-2 text-sm">
+                <h4 class="uppercase font-normal font-semibold mb-2">Подписка</h4>
+                <p class="underline text-gray-400">Скидка 1000 за подписку на нашу рассылку</p>
+                <p class="mt-40">ООО «АЙРОНБАЙ»</p>
+                <p>ИНН 7810941545</p>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    </div>
 </body>
 
 </html>
